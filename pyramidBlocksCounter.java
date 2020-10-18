@@ -6,7 +6,7 @@ public class pyramidBlocksCounter {
   public static int blocksCounter(int levels) {
     int blocksCount = 0;
     for (int i = 1; i <= levels; i++) {
-      blocksCount = blocksCount + i^i; 
+      blocksCount = blocksCount + (i*i); 
     }
     return blocksCount;
   }
