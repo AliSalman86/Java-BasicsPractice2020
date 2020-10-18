@@ -1,4 +1,4 @@
-class pyramidBlocksCounter {
+public class pyramidBlocksCounter {
   public static void main(String[] args) {
     int results = blocksCounter(3);
     System.out.println(results);
@@ -6,7 +6,7 @@ class pyramidBlocksCounter {
   public static int blocksCounter(int levels) {
     int blocksCount = 0;
     for (int i = 1; i <= levels; i++) {
-      blocksCount = blocksCount + i^2; 
+      blocksCount = blocksCount + i^i; 
     }
     return blocksCount;
   }
